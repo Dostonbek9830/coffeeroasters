@@ -1,0 +1,188 @@
+/* barlow-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/barlow-v12-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* barlow-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/barlow-v12-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* fraunces-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  src: url("./fonts/fraunces-v31-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow", "Fraunces" sans-serif;
+}
+
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  padding: 0 24px;
+  margin: 0 auto;
+}
+
+.site-header {
+  padding-top: 32px; 
+  padding-bottom: 40px;
+}
+
+.site-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-header__menu {
+  display: block;
+  width: 16px;
+  height: 15px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  background-image: url(./images/burger-menu.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.site-header__nav {
+  display: none;
+}
+
+.sitenav__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  list-style: none;
+  gap: 33px;
+}
+
+.sitenav__link {
+  font-family: "Barlow";
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.923077px;
+  color: #83888F;
+  text-decoration: none;
+}
+
+.sitenav__link:hover {
+  color: #333D4B;
+}
+
+.hero__wrapper {
+  width: 100%;
+  height: 500px;
+  background-image: url(./images/hero-img-for-mobile.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.hero__text {
+  padding-top: 40px;
+  padding-left: 24px;
+  width: 260px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}
+
+.hero__title {
+  padding-bottom: 24px;
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  color: #FEFCF7;
+}
+
+.hero__desc {
+  padding-bottom: 54px;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 25px;
+  text-align: center;
+  color: #FEFCF7;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+.hero__link {
+  margin-bottom: 115px;
+  padding: 15px 31px;
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center; 
+  color: #FEFCF7;
+  background: #0E8784;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+  .site-header__nav {
+    display: block;
+  }
+  
+  .site-header__menu {
+    display: none;
+  }
+  
+  .hero__wrapper {
+    height: 500px;
+    background-image: url(./images/hero-img-for-desktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+  }
+  
+  .hero__text {
+    width: 398px;
+    padding-top: 100px;
+    padding-left: 58px;
+  }
+  
+  .hero__title {
+    font-size: 48px;
+    line-height: 48px;
+    text-align: start;
+  }
+  
+  .hero__desc {
+    font-size: 15px;
+    line-height: 25px;
+    text-align: start;
+  }
+  
+  
+}
