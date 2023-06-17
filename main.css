@@ -151,6 +151,8 @@ body {
 @media only screen and (min-width:320px){
   .hero__text {
     padding-top: 100px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
 
