@@ -131,13 +131,16 @@ body {
   opacity: 0.8;
 }
 
-.hero__link {
-  width: 217px;
-  display: block;
+.hero__link-wrapper {
+  max-width: 217px;
   margin: 0 auto;
+}
+
+.hero__link {
+  display: inline-block;
+  width: 100%;
   padding: 15px 31px;
   font-family: "Fraunces";
-  font-style: normal;
   font-weight: 900;
   font-size: 18px;
   line-height: 25px;
@@ -147,6 +150,109 @@ body {
   border-radius: 6px;
   text-decoration: none;
 }
+
+/* Collection section */
+
+
+.collection {
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+
+.collection__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  padding: 0;
+  list-style: none;
+}
+
+.collection__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 282px;
+  margin: 0 auto;
+}
+
+.collection__title {
+  font-family: "Fraunces";
+  color: #333D4B;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 32px;
+}
+
+
+.collection__caption {
+  font-family: "Barlow";
+  color: #333D4B;
+  text-align: center;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.collection__title--before-espresso::before {
+  position: relative;
+  padding-bottom: 24px;
+  margin: 0 auto;
+  display: block;
+  width: 200px;
+  height: 151px;
+  content: url(./images/gran-espresso.png);
+}
+
+.collection__title--before-planalto::before {
+  position: relative;
+  padding-bottom: 24px;
+  margin: 0 auto;
+  display: block;
+  width: 200px;
+  height: 151px;
+  content: url(./images/planalto.png);
+}
+
+.collection__title--before-piccollo::before {
+  position: relative;
+  padding-bottom: 24px;
+  margin: 0 auto;
+  display: block;
+  width: 200px;
+  height: 151px;
+  content: url(./images/piccollo.png);
+}
+
+.collection__title--before-danche::before {
+  position: relative;
+  padding-bottom: 24px;
+  margin: 0 auto;
+  display: block;
+  width: 200px;
+  height: 151px;
+  content: url(./images/danche.png);
+}
+
+.collection__item {
+  display: flex;
+  flex-direction: row;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (min-width:320px){
   .hero__text {
@@ -176,7 +282,7 @@ body {
   }
   
   .hero__text {
-    width: 398px;
+    width: 450px;
     padding-top: 100px;
     padding-left: 58px;
   }
@@ -202,39 +308,45 @@ body {
     padding-top: 40px;
   }
   
-}
-
-@media only screen and (min-width:576px){
-  .hero__text{
-    padding-top: ;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .hero__title {
-    font-size: 72px;
-    line-height: 72px;
+  .hero__link-wrapper {
+    max-width: 217px;
+    margin: 0;
   }
   
-  .hero__desc {
-    font-size: 16px;
-    line-height: 26px;
+  
+  
+  @media only screen and (min-width: 576px){
+    .hero__text{
+      padding-top: ;
+    }
   }
   
-  .hero__link {
-    font-size: 18px;
-    line-height: 25px;
+  @media only screen and (min-width: 1200px) {
+    .hero__title {
+      font-size: 72px;
+      line-height: 72px;
+    }
+    
+    .hero__desc {
+      font-size: 16px;
+      line-height: 26px;
+    }
+    
+    .hero__link {
+      font-size: 18px;
+      line-height: 25px;
+    }
+    
+    .hero__text {
+      padding-top: 100px;
+      padding-left: 86px;
+      min-width: 650px;
+    }
+    
+    .hero__wrapper {
+      height: 600px;
+    }
   }
-
-  .hero__text {
-    padding-top: 140px;
-    padding-left: 86px;
-    width: 600px;
-  }
-
-  .hero__wrapper {
-    height: 600px;
-  }
-}
-
-
+  
+  
+  
